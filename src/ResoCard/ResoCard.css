@@ -1,5 +1,6 @@
 .reso-card {
     box-sizing: border-box;
+    font-size: 16px;
     border: 3px solid white;
     padding: 20px;
     background-color: rgb(51, 48, 48);

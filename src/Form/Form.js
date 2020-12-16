@@ -9,7 +9,7 @@ class Form extends Component {
 			name: '',
 			date: '',
 			time: '',
-			number: ''
+			guests: ''
 		}
 	}
 
@@ -18,15 +18,14 @@ class Form extends Component {
 	}
 
 	handleSubmitNewReso = () => {
-		postNewReso(this.state.name, this.state.date, this.state.time, this.state.number)
+		postNewReso(this.state.name, this.state.date, this.state.time, this.state.guests)
 		.then(response => this.props.makeNewReso(response))
 		this.clearInputs();
 	}
 
 	clearInputs = () => {
-		this.setState({ name: '', date: '', time: '', number: '' })
+		this.setState({ name: '', date: '', time: '', guests: '' })
 	}
-
 
 	render() {
 		return (
@@ -35,7 +34,7 @@ class Form extends Component {
 					<input type='text' name='name' value={this.state.name} placeholder='Name' onChange={this.handleChange}></input>
 					<input type='text' name='date' value={this.state.date} placeholder='Date'onChange={this.handleChange}></input>
 					<input type='text' name='time' value={this.state.time} placeholder='Time'onChange={this.handleChange}></input>
-					<input type='text' name='number' value={this.state.number} placeholder='Number'onChange={this.handleChange}></input>
+					<input type='text' name='guests' value={this.state.guests} placeholder='Guests'onChange={this.handleChange}></input>
 					<button onClick={this.handleSubmitNewReso}>Make Reservation</button>
 				</form>
 			</section>
