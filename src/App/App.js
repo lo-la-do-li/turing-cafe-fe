@@ -20,12 +20,6 @@ class App extends Component {
   makeNewReso = (newReso) => {
     this.setState({ reservations: [...this.state.reservations, newReso]})
   }
-//   deleteReso = (id) => {
-//     const filteredResos = reservations.filter(reso => {
-      
-//   }
-//   setState({reservations: filteredResos})
-// }
 
   render() {
     return (
