@@ -15,7 +15,7 @@ export const postNewReso = () => {
 			name: name,
 			date: date,
 			time: time, 
-			number: +numberGuests
+			number: +number,
 		})
 	})
 	.then(response => response.json()).catch(error => console.log(error))

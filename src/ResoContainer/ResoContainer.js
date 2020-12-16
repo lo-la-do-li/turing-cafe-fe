@@ -11,7 +11,7 @@ const ResoContainer = ({ reservations }) => {
 					name={reso.name}
 					date={reso.date}
 					time={reso.time}
-					numberGuests={reso.number}
+					guests={reso.number}
 					key={reso.id}
 			/>
 		);

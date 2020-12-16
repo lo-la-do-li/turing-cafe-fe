@@ -8,7 +8,7 @@ class Form extends Component {
 			name: '',
 			date: '',
 			time: '',
-			numberGuests: '',
+			number: '',
 		}
 		
 	}
