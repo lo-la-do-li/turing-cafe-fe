@@ -17,6 +17,9 @@ class App extends Component {
     .then(resoData => this.setState({ reservations: resoData} ))
   }
 
+  makeNewReso = (newReso) => {
+    this.setState({ reservations: [...this.state.reservations, newReso]})
+  }
 //   deleteReso = (id) => {
 //     const filteredResos = reservations.filter(reso => {
       
@@ -29,7 +32,7 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-          <Form />
+          <Form makeNewReso={this.makeNewReso}/>
         </div>
         <div className='resy-container'>
           <ResoContainer 
