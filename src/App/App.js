@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { fetchAllResos } from '../apiCalls'
 import ResoContainer from '../ResoContainer/ResoContainer'
+import Form from '../Form/Form';
 import './App.css';
 
 class App extends Component {
