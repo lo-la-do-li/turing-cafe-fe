@@ -8,7 +8,7 @@ const ResoCard = ({ id, name, date, time, number }) => {
 			<p>Date: {date}</p>
 			<p>Time: {time}</p>
 			<p>Guests: {number}</p>
-			{/* <button onClick={() => deleteReso(id)}>X</button> */}
+			<button>X</button>
 		</div>
 	)
 }

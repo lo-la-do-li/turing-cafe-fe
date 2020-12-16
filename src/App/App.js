@@ -17,6 +17,13 @@ class App extends Component {
     .then(resoData => this.setState({ reservations: resoData} ))
   }
 
+//   deleteReso = (id) => {
+//     const filteredResos = reservations.filter(reso => {
+      
+//   }
+//   setState({reservations: filteredResos})
+// }
+
   render() {
     return (
       <div className="App">
