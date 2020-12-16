@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { fetchAllResos } from '../apiCalls'
+import ResoContainer from '../ResoContainer/ResoContainer'
 import './App.css';
 
 class App extends Component {
@@ -23,6 +24,9 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
+          <ResoContainer 
+            reservations={this.state.reservations}
+          />
           
         </div>
       </div>
