@@ -26,7 +26,7 @@ class Form extends Component {
 	clearInputs = () => {
 		this.setState({ name: '', date: '', time: '', guests: '' })
 	}
-
+	
 	render() {
 		return (
 			<section className='form'>

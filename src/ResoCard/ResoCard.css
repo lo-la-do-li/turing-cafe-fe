@@ -1,7 +1,15 @@
 .reso-card {
-    box-sizing: border-box;
-    font-size: 16px;
-    border: 3px solid white;
-    padding: 20px;
-    background-color: rgb(51, 48, 48);
+	box-sizing: border-box;
+	font-size: 16px;
+	border: 3px solid white;
+	padding: 20px;
+	background-color: rgb(51, 48, 48);
+}
+
+.delete-btn {
+	margin: 10px;
+	width: 20%;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 18px;
 }
