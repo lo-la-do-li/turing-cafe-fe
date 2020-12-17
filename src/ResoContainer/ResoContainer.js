@@ -2,7 +2,7 @@ import React from 'react';
 import ResoCard from '../ResoCard/ResoCard';
 import './ResoContainer.css';
 
-const ResoContainer = ({ reservations }) => {
+const ResoContainer = ({ reservations, removeDeletedReso }) => {
 
 	const resoCards = reservations.map(reso => {
 		return(
@@ -11,8 +11,9 @@ const ResoContainer = ({ reservations }) => {
 					name={reso.name}
 					date={reso.date}
 					time={reso.time}
-					guests={reso.number}
+					number={reso.number}
 					key={reso.id}
+					removeDeletedReso={removeDeletedReso}
 			/>
 		);
 	})
