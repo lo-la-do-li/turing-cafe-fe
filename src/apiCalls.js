@@ -4,7 +4,7 @@ export const fetchAllResos = () => {
 		.catch(error => console.log(error))
 }
 
-export const postNewReso = (name, date, time, guests) => {
+export const postNewReso = (name, date, time, number) => {
 	return fetch('http://localhost:3001/api/v1/reservations', 
 		{
 			method: 'POST',
@@ -15,7 +15,7 @@ export const postNewReso = (name, date, time, guests) => {
 			name: name,
 			date: date,
 			time: time, 
-			guests: +guests,
+			number: number,
 		})
 	})
 	.then(response => response.json())
