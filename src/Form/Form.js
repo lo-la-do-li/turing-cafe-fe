@@ -14,6 +14,7 @@ class Form extends Component {
 	}
 
 	handleChange = (event) => {
+    event.preventDefault();
 		this.setState({[event.target.name]: event.target.value})
 	}
 

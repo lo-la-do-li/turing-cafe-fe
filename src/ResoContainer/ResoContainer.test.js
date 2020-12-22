@@ -12,12 +12,12 @@ beforeEach(() => {
     <ResoContainer 
       reservations={mockReservations}
       removeDeletedReso={mockRemoveDeletedReso}
-      />
+    />
   )
 })
   describe('ResoContainer', () => {
     it('should render a set of previously made reservations', () => {
-      const name = screen.getByText('Lola');
+      const name = screen.getByText('Steph');
       const name2 = screen.getByText('Finn');
 
       expect(name).toBeInTheDocument();
