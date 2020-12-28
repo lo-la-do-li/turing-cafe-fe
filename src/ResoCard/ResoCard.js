@@ -9,7 +9,7 @@ const ResoCard = ({ id, name, date, time, number, removeDeletedReso }) => {
 				<p>Date: {date}</p>
 				<p>Time: {time}</p>
 				<p>Number: {number}</p>
-			<button className='delete-btn' onClick={() => removeDeletedReso(id)}>X</button>
+			<button className='delete-btn' onClick={() => removeDeletedReso(id)}>CANCEL</button>
 		</div>
 	)
 }
