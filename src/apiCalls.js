@@ -15,9 +15,21 @@ export const postNewReso = (name, date, time, number) => {
 			name: name,
 			date: date,
 			time: time, 
-			number: number,
+			number: +number,
 		})
 	})
 	.then(response => response.json())
 	.catch(error => console.log(error))
 }
+
+export const deleteReso = (id) => {
+  return fetch(`http://localhost:3001/api/v1/reservations/${+id}`, 
+    {
+      method: 'DELETE',
+      headers: {
+      'Content-type': 'application/json'
+      },
+    })
+    .then(response => console.log(response.json()))
+    .catch(error => console.log(error))
+  }

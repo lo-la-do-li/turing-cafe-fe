@@ -1,7 +1,39 @@
 .reso-card {
-    box-sizing: border-box;
-    font-size: 16px;
-    border: 3px solid white;
-    padding: 20px;
-    background-color: rgb(51, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin: 15px;
+	padding: 30px;
+  background-image: linear-gradient(rgba(77, 32, 7, 0.99),rgba(196, 145, 104, 0.9)
+ );
+}
+
+h3 {
+  align-self: center;
+}
+.reso-card:hover {
+  transform: scale(1.05, 1.05)
+}
+
+.delete-btn {
+  align-self: center;
+  margin: 10px;
+  width: 80%;
+  height: 25px;
+	border: 1px solid black;
+  border-radius: 5px;
+  background-color:rgb(200, 218, 223);
+  font-size: 14px;
+  color: black;
+}
+
+.delete-button:hover {
+  cursor: no-drop;
+  transform: none;
 }
