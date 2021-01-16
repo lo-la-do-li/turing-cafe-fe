@@ -5,7 +5,9 @@ form {
 input, button {
     margin: 10px;
     width: 20%;
-    border: 2px solid black;
+    border: 2px solid rgb(40, 33, 33);
+    color:rgb(1, 20, 20);
+    background-color: whitesmoke;
     border-radius: 5px;
     font-size: 18px;
 }
